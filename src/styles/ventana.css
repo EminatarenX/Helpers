@@ -1,0 +1,79 @@
+.ventana{
+  overflow-y: scroll;
+  margin: 50px;
+  background-color: rgba(1, 56, 165, 0.119);
+  max-height: 420px;
+  min-width: 850px;
+  border-radius: 20px;
+  background-color: aliceblue;
+  
+}
+
+
+.v-navegacion{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 50px;
+  color: rgb(12, 16, 49);
+  font-weight: 600;
+  background: linear-gradient(to right, rgb(255, 255, 255),rgb(236, 236, 236),rgb(236, 236, 236)) 100%;
+ 
+}
+
+.auth{
+  display: flex;
+  gap: 20px;
+} 
+
+
+.bienvenida{
+  background-color: rgb(237, 244, 251);
+  
+  padding: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.b-titulo{
+  font-size: 30px;
+  color: rgb(9, 9, 50);
+}
+
+.b-secondary{
+  font-size: 20px;
+  color: rgb(10, 6, 47);
+}
+
+.secondary{
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  background-image: url('../assets/react.svg');
+  background-size: cover;
+  
+}
+span{
+  color: orange ;
+}
+
+.text-bienvenido{
+  color: rgb(17, 21, 50);
+}
+
+@media (max-width: 980px) {
+  .ventana{
+    min-width: 390px;
+    min-height: 600px;
+  }
+  .secondary{
+    padding: 80px 20px;
+    flex-direction: column;
+
+  }
+  .bienvenida{
+    flex-direction: column;
+  }
+}

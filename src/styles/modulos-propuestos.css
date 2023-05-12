@@ -1,0 +1,24 @@
+.modulos{
+  animation: ease-in page-transition .6s;
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 130px;
+  gap: 50px;
+  align-items: center;
+}
+@media (max-width: 980px) {
+  .modulos{
+    flex-direction: column;
+  }
+}
+
+
+@keyframes page-transition {
+    from{
+      filter: blur(10px);
+      opacity: 0;
+    }to{
+      filter: blur(0px);
+      opacity: 1;
+    }
+}
