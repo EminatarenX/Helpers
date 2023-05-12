@@ -1,38 +1,72 @@
-import imagen2 from '../assets/P3.jpg'
-import '../styles/ventana.css'
+import room from "../assets/room.svg";
+import keys from "../assets/keys.svg";
+import estudiantes from '../assets/students.svg'
+import "../styles/ventana.css";
+import { useState } from "react";
+import Login from "./Login";
+
 function Ventana() {
+  const [login, setLogin] = useState(false)
+
+  const showLogin = () => {
+    setLogin(true)
+  }
   return (
     <div className="ventana">
-    <nav className="v-navegacion">
-      <a>
-        Estudia<span>Confort</span>
-      </a>
-      <div className="auth">
-        <a>Iniciar Sesion</a>
-        <a>Registrate</a>
-      </div>
-    </nav>
+      {login ? 
+      (<Login 
+      setLogin={setLogin}
+      />
+      )
+       : ''}
+      <nav className="v-navegacion sticky">
+        <a>
+          Estudia<span>Confort</span>
+        </a>
+        <div className="about">
+          <a href="#secondary">Como Funciona?</a>
+          <a href="#section-3">Sobre Nosotros</a>
+        </div>
+        <div className="auth">
+          <a style={{cursor:'pointer'}} onClick={showLogin}>Iniciar Sesion</a>
+          <a>Registrate</a>
+        </div>
+      </nav>
 
+      <main className="main">
+        <section className="bienvenida">
+          <div>
+            <p className="bienvenida-text">La mejor habitacion</p>
+            <p className="bienvenida-text">
+              a tu <span>alcance</span>
+            </p>
+          </div>
+          <img className="imagen-w" src={room} alt="Imagen-perrona" />
+        </section>
 
-    <main className='main' >
-      <div className='bienvenida'>
-        <p className='b-titulo' >
-          Tu Mejor<span>Opcion</span>
-        </p>
-        <p className='text-bienvenido'>Bienvenido</p>
-      </div>
+        <section className="secondary" id="secondary">
+          <img className="imagen-keys" src={keys} alt="imagen-keys" />
+          <p className="b-secondary">
+            Encuentra la habitacion <span>ideal</span> cerca de tu{" "}
+            <span>escuela</span>
+          </p>
+        </section>
 
-      <div className='secondary'>
-     
-      <p className='b-secondary'>
-          Encuentra la habitacion <span>ideal</span> cerca de tu{" "}
-          <span>escuela</span>
-        </p>
-        
-      </div>
-    </main>
-  </div>
-  )
+        <section id="section-3" className="section-3">
+          <div>
+          <h2>Sobre nosotros</h2>
+          <p >
+            Somos una empresa encargada de brindar comodidad a los clientes en
+            este caso estudiantes para que puedan teneer una experiencia en la
+            universidad
+          </p>
+          </div>
+         
+          <img className="img-estudiantes" src={estudiantes} alt="imagen-estudiantes" />
+        </section>
+      </main>
+    </div>
+  );
 }
 
-export default Ventana
+export default Ventana;

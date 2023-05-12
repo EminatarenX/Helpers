@@ -8,11 +8,11 @@ function Header() {
   const [modal, setModal] = useState(false)
   
   const location = useLocation()
-  console.log(modal)
+
   return (
   <>
   {modal ? <Modal setModal={setModal}/> : ''}
-    <header className='shadow row'>
+    <header className={`shadow row `}>
       <Link className={`col ${location.pathname === '/antecedentes' ? 'active' : ''}`} to='/antecedentes'>Antecedentes</Link>
       <Link className={`col ${location.pathname === '/problematica' ? 'active' : ''}`} to='/problematica'>Problematica</Link>
       <Link className={`col ${location.pathname === '/solucion' ? 'active' : ''}`} to='/solucion'>Solucion</Link>

@@ -5,12 +5,15 @@
   margin: 25px 130px;
   gap: 50px;
   align-items: center;
+  
 }
 @media (max-width: 980px) {
   .modulos{
     flex-direction: column;
   }
 }
+
+
 
 
 @keyframes page-transition {
