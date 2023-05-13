@@ -1,16 +1,17 @@
 import "../styles/modulos-propuestos.css";
 import Ventana from "../components/Ventana";
 
-
 function ModulosPropuestos() {
-  
-  
   return (
-    <div className="modulos">
-      <Ventana/>
-
-      <h1>Modulos Propuestos</h1>
-    </div>
+    <section className="modulos">
+      <Ventana />
+      <div className="content-page">
+        <h1 className="text-page">Ejemplo de aplicacion</h1>
+        <p className="text-page">
+          Una app minimalista e intituiva para cualquier nuevo usuario{" "}
+        </p>
+      </div>
+    </section>
   );
 }
 

@@ -22,8 +22,11 @@ function Layout() {
     if(!background)
     {
       document.body.style = ' background: linear-gradient(90deg, rgb(0, 99, 110) 0%, rgb(0, 69, 87) 47%, rgba(0,28,111,1) 100%);'
+      
     }else{
       document.body.style = 'background: #dfdddd7e;'
+   
+      
     }
   },[background])
   

@@ -5,7 +5,7 @@ function Login({ setLogin }) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    setBienvenido(true);
+    setBienvenido(true);  
 
     setTimeout(() => {
       setBienvenido(false);
