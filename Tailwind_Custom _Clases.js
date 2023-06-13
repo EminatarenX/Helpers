@@ -12,9 +12,9 @@ extend: {
         'slide': {
           '0%': {
             transform: 'traslateX(-400px)'
-          }
+          },
           '100%': {
-            transform: 'traslateX(0px)
+            transform: 'traslateX(0px)'
           }
         }
       },
@@ -23,7 +23,7 @@ extend: {
       },
       colors: {
          'rojo': '#d41935',
-         'azul': '#2780c4'.
+         'azul': '#2780c4',
          'a-oscuro': '#041833',
        },
       backgroundImage: {
@@ -31,3 +31,4 @@ extend: {
       }, 
             
     },
+  },
