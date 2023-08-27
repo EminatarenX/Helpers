@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu archivo CSS -->
+    <title>Nombre de tu juego</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <main id="main" class="bg-gradient-to-r from-sky-700 to-sky-400 h-screen flex justify-center flex-col gap-10 items-center">
+   <!--loader 1 Inicio -->
+   <div class="flex gap-5">
+     <button id="btn-1" type="button" class="border border-white p-2 rounded text-white font-bold hover:bg-sky-400 transition-colors">
+     loader 1
+   </button>
+   <button id="btn-2" type="button" class="border border-white p-2 rounded text-white font-bold hover:bg-sky-400 transition-colors">
+     loader 2
+   </button>
+   <button id="btn-3" type="button" class="border border-white p-2 rounded text-white font-bold hover:bg-sky-400 transition-colors">
+     loader 3
+   </button>
+   </div>
+    <div id="loader1" class="loader"></div>
+    
+     <!--loader 2 Inicio -->
+    
+    <div id="loader2" class="loader2">
+      <div class="color-loader-2"></div>
+    </div>
+    
+  <!--loader-alert 3 Inicio -->
+    <div id="loader3" class="loader3  flex justify-between flex-col ">
+      <p class="text-center pt-5 font-bold text-xl delay text-gray-700">Alert!</p>
+      <p class="text-gray-600 text-xs text-center delay2">escribe el contenido</p>
+      <div class="color-loader-3 bg-sky-500 h-2"></div>
+    </div>
+     <!--loader-alert 3 final -->
+    
+  </main>
+  <script src="index.js"></script> <!-- Enlace a tu archivo JS -->
+</body>
+</html>
